@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Ajuste para logo*/
+.img-fluid{
+  height: 45px;
+  width: auto;
+}
+/* Ajuste para imágenes del carrusel */
+    .carousel-item img {
+      max-height: 450px;
+      object-fit: cover;
+    }
+
+    footer{
+        min-height: 80px;
+        background-color: rgb(23, 150, 209);
+    }
+
+    h1{
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 50px 0;
+    }

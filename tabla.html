@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Práctica 6 Bootstrap</title>
+    <!-- Enlace al archivo CSS de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="container-fluid p-0 min-vh-100 d-flex flex-column tabla">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.png" class="img-fluid" alt="ENUIUN logo">
+                    </a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item indice">
+                            <a class="nav-link active" aria-current="page" href="index.html">Índice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tabla">Tabla</a>
+                        </li>
+                        <li class="nav-item servicios">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">SEO</a></li>
+                                <li><a class="dropdown-item" href="#">Desarrollo Web</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Marketing Online</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <main class="container my-5 flex-grow-1">
+            <h2 class="mb-4">Listado de Servicios y Tarifas</h2>
+            
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Servicio</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Precio Estimado</th>
+                            <th scope="col">Plazo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Auditoría SEO</td>
+                            <td>Análisis completo de posicionamiento web.</td>
+                            <td>450€</td>
+                            <td>15 días</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Desarrollo Web</td>
+                            <td>Creación de landing pages responsivas.</td>
+                            <td>800€</td>
+                            <td>30 días</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Marketing Online</td>
+                            <td>Gestión de campañas en redes sociales.</td>
+                            <td>300€/mes</td>
+                            <td>Mensual</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Diseño Gráfico</td>
+                            <td>Logotipos e identidad corporativa.</td>
+                            <td>250€</td>
+                            <td>10 días</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <div class="row g-0">
+            <footer class="col-12 footer box m-0">
+
+            </footer>
+        </div>
+    </div>
+    <!-- Enlace a los archivos JavaScript de Bootstrap 5 y Popper en un solo archivo (bootstrap.bundle.min.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
